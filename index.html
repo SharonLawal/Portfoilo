@@ -8,17 +8,62 @@
     <link rel = "stylesheet" href = "mediaqueries.css">
 </head>
 <body>
-    <nav>
-        <div class = "logo">Sharon</div>
+    <nav id="desktop-nav">
+        <div class = "logo">Sharon Lawal</div>
 
-        <div class = "links">
-            <a href = "#">About</a>
-            <a href = "#">Experience</a>
-            <a href = "#">Projects</a>
-            <a href = "#">Contact</a>
+        <div class = "nav-links">
+            <a href = "#about">About</a>
+            <a href = "#experience">Experience</a>
+            <a href = "#projects">Projects</a>
+            <a href = "#contact">Contact</a>
         </div>
     </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sharon Lawal</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="ProfilePic.jpg" alt="Profile Picture" />
+        </div>
+
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Sharon Lawal</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+        </div>
+
+        <div class="btn-container">
+            <button
+                class="btn btn-color-2"
+                onclick="window.open('./assets/resume-example.pdf')">Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/sharon-lawal-9b7289261"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="https://github.com/SharonLawal"><i class="fab fa-github icon"></i></a>
+          </div>
+        </div>
+    </section>    
     
     <script src = "portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/e47ab6e39b.js" crossorigin="anonymous"></script>
 </body>
 </html>
