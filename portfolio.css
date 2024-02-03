@@ -7,6 +7,9 @@
 body {
     font-family: "Poppins", sans-serif;
     display: grid;
+    place-items: center;
+    background-color: slategrey;
+    color: whitesmoke;
 }
   
 html {
@@ -46,7 +49,6 @@ html {
   }
   
   a:hover {
-    color: green;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);
@@ -140,8 +142,8 @@ html {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding: 6vh;
+  height: 56vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -154,15 +156,16 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-  background-color: aqua;
-  display: block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   gap: 5rem;
   max-height: 500px;
+  height: max-content;
 }
 
-.section__pic-container {
+.section_pic-container {
   display: grid;
   height: 400px;
   width: 400px;
@@ -201,6 +204,7 @@ img {
 .title {
   font-size: 3rem;
   text-align: center;
+  padding: 1rem;
 }
 
 #socials-container {
@@ -268,3 +272,75 @@ img {
 .btn-container {
   gap: 1rem;
 }
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  padding: 1rem;
+  max-height: 30vh;
+  height: max-content;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: grey;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 20%;
+}
+
+.section__pic-container {
+  margin: auto 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 275px;
+  height: 275px;
+  /* width: 30vw;
+  height: 16vw; */
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+/* EXPERIENCE SECTION */
