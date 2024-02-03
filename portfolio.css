@@ -142,7 +142,7 @@ html {
 /* SECTIONS */
 
 section {
-  padding: 6vh;
+  padding: 4vh;
   height: 56vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -165,7 +165,7 @@ section {
   height: max-content;
 }
 
-.section_pic-container {
+.section__pic-container {
   display: grid;
   height: 400px;
   width: 400px;
@@ -317,24 +317,6 @@ img {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 20%;
-}
-
-.section__pic-container {
-  margin: auto 0;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 275px;
-  height: 275px;
-  /* width: 30vw;
-  height: 16vw; */
 }
 
 .title {
