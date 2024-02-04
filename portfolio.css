@@ -302,7 +302,7 @@ img {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
   background: grey;
   border-radius: 2rem;
@@ -374,6 +374,7 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  width: 100%;
 }
 
 .project-img {
@@ -400,6 +401,10 @@ i {
   align-items: center;
 }
 
+.details-container.color-container {
+  padding: 0.3rem;
+}
+
 /* CONTACT */
 
 #contact {
@@ -407,7 +412,8 @@ i {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
-  margin: 0 0.5rem;
+  margin: 0 0.2rem;
+  margin-top: 10rem;
 }
 
 .contact-info-upper-container {
