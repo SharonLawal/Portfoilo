@@ -320,11 +320,10 @@ img {
 .text-container {
   text-align: center;
   width: 80%;
-    margin: auto;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: auto 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 /* Techologies SECTION */
@@ -408,6 +407,7 @@ i {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin: 0 0.5rem;
 }
 
 .contact-info-upper-container {
@@ -446,7 +446,6 @@ i {
 
 footer {
   height: 26vh;
-  margin: 0 1rem;
 }
 
 footer p {
