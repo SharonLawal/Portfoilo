@@ -106,4 +106,8 @@
     .text-container {
       text-align: justify;
     }
+    #technologies,
+    .technologies-details-container {
+      margin-top: 2rem;
+    }
   }
