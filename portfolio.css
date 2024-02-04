@@ -321,7 +321,8 @@ img {
 
 /* Techologies SECTION */
 #techologies {
-  position: relative;
+  position: absolute;
+  top: 20px;
 }
 
 .techologies-sub-title {
