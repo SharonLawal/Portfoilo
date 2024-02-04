@@ -279,7 +279,6 @@ img {
   position: relative;
   padding: 1rem;
   max-height: 30vh;
-  height: max-content;
 }
 
 .about-containers {
