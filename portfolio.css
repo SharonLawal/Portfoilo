@@ -318,8 +318,8 @@ img {
 }
 
 .text-container {
-  text-align: center;
-  width: 80%;
+  text-align: justify;
+  width: 100%;
   margin: auto 0;
   padding: 20px;
   border-radius: 5px;
