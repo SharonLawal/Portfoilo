@@ -77,13 +77,13 @@
 
     article {
       font-size: 1rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
     }
 
     .article-container {
-      text-align: left;
       margin: 2px;
-      align-items: flex-start;
-      justify-content: flex-start;
     }
 
     footer nav {
@@ -92,13 +92,17 @@
     }
 
     .about-containers,
-    .contact-info-upper-container,
     .btn-container {
       flex-wrap: wrap;
     }
 
+    .contact-info-upper-container {
+      display: grid;
+    }
+
     .contact-info-container {
-      margin: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     .contact-info-container p,
@@ -135,11 +139,15 @@
     }
 
     .text-container {
-      text-align: center;
+      text-align: justify;
     }
     
     #technologies,
     .technologies-details-container {
       margin-top: 2rem;
+    }
+
+    section {
+      margin: 0 3%;
     }
   }
