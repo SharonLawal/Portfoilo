@@ -99,6 +99,8 @@ html {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  position: absolute;
+  z-index: 999;
 }
 
 .menu-links a {
@@ -116,7 +118,7 @@ html {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -324,6 +326,7 @@ img {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  line-height: 1.6;
 }
 
 /* Techologies SECTION */
