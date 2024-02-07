@@ -158,7 +158,7 @@ html {
 
 .menu-links.open {
   max-height: 200px;
-  animation: slideDown 0.5s forwards; /* Animate the menu links */
+  animation: slideDown 0.5s forwards;
 }
 
 @keyframes slideDown {
