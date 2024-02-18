@@ -90,9 +90,6 @@ html {
   }
 
   /* HAMBURGER MENU */
-
-/* HAMBURGER MENU */
-
 #hamburger-nav {
   display: none;
 }
@@ -100,7 +97,8 @@ html {
 .hamburger-menu {
   position: relative;
   display: inline-block;
-  animation: slideRight 1s forwards; /* Animate the hamburger menu */
+  animation: slideRight 1s forwards;
+  z-index: 1;
 }
 
 @keyframes slideRight {
@@ -241,6 +239,7 @@ section {
   max-height: 500px;
   height: max-content;
   animation: scaleIn 1s ease forwards;
+  z-index: -1;
 }
 
 @keyframes scaleIn {
