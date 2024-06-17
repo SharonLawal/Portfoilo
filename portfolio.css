@@ -69,6 +69,7 @@ html {
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181, 181, 181);
     transition: 3s;
+    cursor: pointer;
   }
 
   .logo {
