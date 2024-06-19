@@ -16,11 +16,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-.btn {
-    transition: all 300ms ease;
-    animation: alternate-reverse 10s;
-  }
   
   /* DESKTOP NAV */
 
@@ -195,7 +190,7 @@ html {
 
 section {
   padding: 7vh;
-  height: 60vh;
+  height: 100vh;
   margin: 0 5rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -240,7 +235,7 @@ section {
   max-height: 500px;
   height: max-content;
   animation: scaleIn 1s ease forwards;
-  z-index: -1;
+  z-index: 1;
 }
 
 @keyframes scaleIn {
@@ -250,6 +245,55 @@ section {
   100% {
     transform: scale(1);
   }
+}
+
+.btn {
+    transition: all 300ms ease;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 2rem;
+    animation: slideLeft 1s ease forwards;
+    transition: all 300ms ease;
+    animation: alternate-reverse 10s;
+}
+
+a #download-cv-btn {
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.btn-color-1 {
+    background-color: #007bff;
+}
+
+.btn-color-2 {
+    background-color: #28a745;
+}
+
+#socials-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#socials-container a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Ensure elements are visible and clickable */
+.btn, #socials-container a {
+    display: inline-block;
+    pointer-events: auto;
+    z-index: 1;
 }
 
 .section__pic-container {
@@ -337,7 +381,7 @@ section {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 2rem;
   animation: slideLeft 1s ease forwards;
 }
@@ -379,10 +423,6 @@ section {
 
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
 }
 
 /* ABOUT SECTION */
